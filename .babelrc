@@ -1,0 +1,19 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": ["last 2 versions", "safari >= 7"]
+        },
+        "modules": false
+      }
+    ],
+    "react"
+  ],
+  "plugins": [
+    "external-helpers",
+    ["transform-class-properties", {"spec": true}],
+    "transform-object-rest-spread"
+  ]
+}

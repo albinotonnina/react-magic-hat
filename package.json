@@ -1,0 +1,68 @@
+{
+  "name": "react-magic-hat",
+  "version": "1.0.0",
+  "description": "A kind of UI engine",
+  "main": "dist/magicHat.js",
+  "module": "dist/magicHat.esm.js",
+  "source": "src/index.js",
+  "size-limit": [
+    {
+      "limit": "8 KB",
+      "path": "dist/magicHat.js"
+    },
+    {
+      "limit": "8 KB",
+      "path": "dist/magicHat.esm.js"
+    }
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "size": "size-limit",
+    "prepare": "npm run build"
+  },
+  "author":
+    "Albino Tonnina <albinotonnina@gmail.com> (http://www.albinotonnina.com)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/albinotonnina/react-magic-hat.git"
+  },
+  "keywords": [
+    "react",
+    "react-dom",
+    "animation",
+    "flip",
+    "ui",
+    "react-component",
+    "stack",
+    "web-animations"
+  ],
+  "peerDependencies": {
+    "react": ">=0.13.x <=16.x.x",
+    "react-dom": ">=0.13.x <=16.x.x"
+  },
+  "dependencies": {},
+  "files": ["dist", "src"],
+  "devDependencies": {
+    "react-flip-move": "^3.0.1",
+    "prop-types": "^15.6.1",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.18.2",
+    "eslint-plugin-react": "^7.7.0",
+    "prettier": "^1.11.1",
+    "prettier-eslint": "^8.8.1",
+    "rollup": "^0.57.0",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-commonjs": "^9.1.0",
+    "rollup-plugin-node-resolve": "^3.2.0",
+    "rollup-plugin-uglify": "^3.0.0",
+    "size-limit": "^0.17.0"
+  }
+}

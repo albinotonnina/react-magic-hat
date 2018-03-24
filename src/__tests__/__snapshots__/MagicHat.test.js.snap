@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MagicHat should match the snapshot 1`] = `
+<MagicHat
+  renderFrame={[Function]}
+>
+  <MagicHatNoState
+    activePage={1}
+    flipMoveOptions={[Function]}
+    moveSeed=""
+    onEndAnimation={[Function]}
+    onStartAnimation={[Function]}
+    pages={
+      Array [
+        Object {
+          "id": "",
+          "page": 1,
+          "state": Object {},
+        },
+      ]
+    }
+    renderFrame={[Function]}
+  >
+    <FlipMovePropConverter
+      appearAnimation={
+        Object {
+          "from": Object {
+            "transform": "scaleX(0) scaleY(1)",
+            "transformOrigin": "50% 50%",
+          },
+          "to": Object {
+            "transform": "",
+          },
+        }
+      }
+      delay={0}
+      disableAllAnimations={false}
+      duration={400}
+      easing="cubic-bezier(0.39, 0.575, 0.565, 1)"
+      enterAnimation={
+        Object {
+          "from": Object {
+            "opacity": 0.1,
+            "transform": "scaleX(0) scaleY(0.4)",
+          },
+          "to": Object {
+            "transform": "",
+          },
+        }
+      }
+      getPosition={[Function]}
+      leaveAnimation={
+        Object {
+          "from": Object {
+            "transform": "",
+            "transformOrigin": "50% 50%",
+          },
+          "to": Object {
+            "opacity": 0.1,
+            "transform": "scaleX(0) scaleY(0.8)",
+          },
+        }
+      }
+      leaveAnimationDefault={
+        Object {
+          "from": Object {
+            "transform": "",
+          },
+          "to": Object {
+            "opacity": 0.1,
+            "transform": "scaleX(0) scaleY(0.8)",
+          },
+        }
+      }
+      maintainContainerHeight={false}
+      onFinishAll={[Function]}
+      onStartAll={[Function]}
+      staggerDelayBy={0}
+      staggerDurationBy={0}
+      typeName={null}
+      verticalAlignment="top"
+    >
+      <FlipMove
+        appearAnimation={
+          Object {
+            "from": Object {
+              "transform": "scaleX(0) scaleY(1)",
+              "transformOrigin": "50% 50%",
+            },
+            "to": Object {
+              "transform": "",
+            },
+          }
+        }
+        delay={0}
+        delegated={
+          Object {
+            "leaveAnimationDefault": Object {
+              "from": Object {
+                "transform": "",
+              },
+              "to": Object {
+                "opacity": 0.1,
+                "transform": "scaleX(0) scaleY(0.8)",
+              },
+            },
+            "style": Object {
+              "position": "relative",
+            },
+          }
+        }
+        disableAllAnimations={false}
+        duration={400}
+        easing="cubic-bezier(0.39, 0.575, 0.565, 1)"
+        enterAnimation={
+          Object {
+            "from": Object {
+              "opacity": 0.1,
+              "transform": "scaleX(0) scaleY(0.4)",
+            },
+            "to": Object {
+              "transform": "",
+            },
+          }
+        }
+        getPosition={[Function]}
+        leaveAnimation={
+          Object {
+            "from": Object {
+              "transform": "",
+              "transformOrigin": "50% 50%",
+            },
+            "to": Object {
+              "opacity": 0.1,
+              "transform": "scaleX(0) scaleY(0.8)",
+            },
+          }
+        }
+        maintainContainerHeight={false}
+        onFinishAll={[Function]}
+        onStartAll={[Function]}
+        staggerDelayBy={0}
+        staggerDurationBy={0}
+        typeName={null}
+        verticalAlignment="top"
+      >
+        <Dummy
+          key=".$1"
+        >
+          hello
+        </Dummy>
+      </FlipMove>
+    </FlipMovePropConverter>
+  </MagicHatNoState>
+</MagicHat>
+`;

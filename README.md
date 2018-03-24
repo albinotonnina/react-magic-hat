@@ -1,3 +1,6 @@
+[![Dependency Up-to-dateness][david-image]][david-url]
+[![Build Status](https://travis-ci.org/albinotonnina/react-magic-hat.svg?branch=master)](https://travis-ci.org/albinotonnina/react-magic-hat)
+
 # React Magic Hat 🎩✨
 
 > A kind of UI technique
@@ -7,6 +10,9 @@ React implementation of what I call the [**Magic Hat UI technique**](https://med
 <p align="center"> 
   <img src="https://albinotonnina.github.io/demo-magic-hat/demo.gif">
 </p>
+
+[david-image]: https://david-dm.org/albinotonnina/react-magic-hat.svg
+[david-url]: https://david-dm.org/albinotonnina/react-magic-hat
 
 ## Features
 

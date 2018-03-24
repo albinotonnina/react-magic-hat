@@ -1,4 +1,13 @@
 {
   "parser": "babel-eslint",
-  "extends": ["eslint:recommended", "plugin:react/recommended"]
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "globals": {
+    "describe": true,
+    "beforeEach": true,
+    "test": true,
+    "it": true,
+    "expect": true,
+    "jest": true,
+    "require": true
+  }
 }

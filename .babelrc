@@ -11,8 +11,16 @@
     ],
     "react"
   ],
+  "env": {
+    "test": {
+      "presets": [["env"], "react"],
+      "plugins": [
+        ["transform-class-properties", {"spec": true}],
+        "transform-object-rest-spread"
+      ]
+    }
+  },
   "plugins": [
-    "external-helpers",
     ["transform-class-properties", {"spec": true}],
     "transform-object-rest-spread"
   ]

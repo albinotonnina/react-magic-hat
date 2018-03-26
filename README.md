@@ -30,7 +30,7 @@ React implementation of what I call the [**Magic Hat UI technique**](https://med
 * [Install](#install)
 * [Usage](#usage)
 * [API](#api)
-* [Example](#example)
+* [Demos](#demos)
 * [Maintainers](#maintainers)
 * [Contribute](#contribute)
 * [License](#license)
@@ -115,7 +115,7 @@ const renderFrame = pageObject => {
 | getFrame(page:number):props                    | Get props of a page                           |
 | closeFrame(page:number)                        | Close a page                                  |
 
-## Examples
+## Demos
 
 Basic demo on codesandbox
 

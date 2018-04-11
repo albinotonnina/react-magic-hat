@@ -55,10 +55,17 @@ import YourMagicContainer from 'react-magic-hat'
 import ComponentA, {id as CompA} from 'components'
 import ComponentB from 'components'
 
-const renderFrame = ({id, actions}) => {
-  const Component = id === CompA ? ComponentA : ComponentB
+const renderFrame = pageObject => {
+  // Please check the renderFrame(pageObject) documentation for all the properties passed to the pageObject.
+  const {id, actions, state} = pageObject
 
-  return <Component {...props} {...actions} />
+  // We get the Component that is going to be rendered, the following is probably the most naive way.
+  const Muv = id === CompA ? ComponentA : ComponentB
+
+  // Another way to do it in the demo, using import-glob
+  // https://github.com/albinotonnina/demo-magic-hat/blob/master/src/Demo.js#L5-L21
+
+  return <Muv {...actions} {...state} />
 }
 
 const Layout = () => (
@@ -91,13 +98,13 @@ const renderFrame = pageObject => {
     id, // 'my-component-id'
     page, // 4
     activePage, // 5
-    state, // { propWePassed: 42, otherProp: 24 }
+    state, // { roses: 'blue', violets: 'red', pass:'whetever', pleases: 'you' }
     actions // see next paragraph for the actions methods
   } = pageObject
 
-  const Page = getComponentById(id) // return a Component, do it whatever you like it
+  const Muv = getComponentById(id) // return a Component
 
-  return <Page {...state} {...actions} />
+  return <Muv {...state} {...actions} />
 }
 ```
 

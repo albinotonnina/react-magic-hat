@@ -1,6 +1,6 @@
 {
   "name": "react-magic-hat",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A kind of UI engine",
   "main": "dist/magicHat.js",
   "module": "dist/magicHat.esm.js",
@@ -67,7 +67,7 @@
     "prop-types": "^15.6.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-flip-move": "^3.0.1",
+    "react-flip-move": "https://github.com/albinotonnina/react-flip-move.git#push_not_splice",
     "rollup": "^0.57.0",
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-commonjs": "^9.1.0",

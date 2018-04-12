@@ -5,9 +5,9 @@
 
 > A kind of UI technique
 
-React implementation of what I call the [**Magic Hat UI technique**](https://medium.com/@albinotonnina/magic-hat-technique-408a3fa590bb).
+React implementation of what I call the [**Magic Hat UI technique**](https://medium.com/@albinotonnina/magic-hat-technique-408a3fa590bb) [[DEMO](https://albinotonnina.github.io/demo-magic-hat)].
 
-<p align="center"> 
+<p align="center">
   <img src="https://albinotonnina.github.io/demo-magic-hat/demo.gif">
 </p>
 

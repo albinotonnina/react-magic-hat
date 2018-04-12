@@ -1,6 +1,7 @@
 import resolve from 'rollup-plugin-node-resolve'
 import babel from 'rollup-plugin-babel'
 import uglify from 'rollup-plugin-uglify'
+import commonJS from 'rollup-plugin-commonjs'
 import pkg from './package.json'
 
 export default {
@@ -15,16 +16,14 @@ export default {
       name: pkg.main,
       file: pkg.main,
       format: 'umd',
-      sourcemap: false,
-      globals: {
-        react: 'React',
-        'react-dom': 'ReactDOM',
-        'prop-types': 'PropTypes'
-      }
+      sourcemap: false
     }
   ],
   plugins: [
     resolve(),
+    commonJS({
+      include: 'node_modules/**'
+    }),
     babel({
       presets: ['react'],
       exclude: 'node_modules/**',
@@ -32,5 +31,5 @@ export default {
     }),
     uglify()
   ],
-  external: ['react', 'prop-types', 'react-dom']
+  external: ['react', 'react-dom']
 }

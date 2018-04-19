@@ -32,9 +32,17 @@ export default class MagicHat extends React.Component {
       const pages = [...prevState.pages]
       const pageIndex = page - 1
 
-      const mergedPayload = {...pages[pageIndex], ...payload, page}
+      const currentPage = pages[pageIndex] || {id: '', state: {}}
 
-      pages.splice(pageIndex, 1, mergedPayload)
+      const nextState = {
+        page,
+        id: payload.id ? payload.id : currentPage.id,
+        state: payload.state
+          ? {...currentPage.state, ...payload.state}
+          : currentPage.state
+      }
+
+      pages.splice(pageIndex, 1, nextState)
 
       return {
         pages,
@@ -61,8 +69,6 @@ export default class MagicHat extends React.Component {
     const {setContent, getFrame, sliceFrame} = this
 
     const frame = getFrame(page)
-
-   
 
     const nextPage = page + 1
 

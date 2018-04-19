@@ -1,6 +1,6 @@
 {
   "name": "react-magic-hat",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "A kind of UI engine",
   "main": "dist/magicHat.js",
   "module": "dist/magicHat.esm.js",
@@ -23,7 +23,8 @@
     "test": "jest",
     "test:updateSnapshots": "jest --updateSnapshot"
   },
-  "author": "Albino Tonnina <albinotonnina@gmail.com> (http://www.albinotonnina.com)",
+  "author":
+    "Albino Tonnina <albinotonnina@gmail.com> (http://www.albinotonnina.com)",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -44,10 +45,7 @@
     "react-dom": ">=0.13.x <=16.x.x"
   },
   "dependencies": {},
-  "files": [
-    "dist",
-    "src"
-  ],
+  "files": ["dist", "src"],
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.2",
@@ -67,7 +65,8 @@
     "prop-types": "^15.6.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-flip-move": "https://github.com/albinotonnina/react-flip-move.git#push_not_splice",
+    "react-flip-move":
+      "https://github.com/albinotonnina/react-flip-move.git#push_not_splice",
     "rollup": "^0.57.0",
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-commonjs": "^9.1.0",
@@ -77,12 +76,8 @@
   },
   "jest": {
     "collectCoverage": true,
-    "coverageReporters": [
-      "html"
-    ],
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ],
+    "coverageReporters": ["html"],
+    "snapshotSerializers": ["enzyme-to-json/serializer"],
     "setupTestFrameworkScriptFile": "<rootDir>/test.setup.js"
   }
 }

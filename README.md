@@ -1,4 +1,5 @@
 [![Dependency Up-to-dateness][david-image]][david-url]
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/5cac2b7c18984c8d9626e904be3def71)](https://app.codacy.com/app/albinotonnina/react-magic-hat?utm_source=github.com&utm_medium=referral&utm_content=albinotonnina/react-magic-hat&utm_campaign=badger)
 [![Build Status](https://travis-ci.org/albinotonnina/react-magic-hat.svg?branch=master)](https://travis-ci.org/albinotonnina/react-magic-hat)
 
 # React Magic Hat 🎩✨

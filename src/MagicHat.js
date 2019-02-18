@@ -27,7 +27,7 @@ export default class MagicHat extends React.Component {
     return this.state.pages[page - 1] || {}
   }
 
-  setContent = (page, payload = {}) => {
+  setContent = (page, payload = {}, isActive) => {
     this.setState(prevState => {
       const pages = [...prevState.pages]
       const pageIndex = page - 1
@@ -46,7 +46,7 @@ export default class MagicHat extends React.Component {
 
       return {
         pages,
-        activePage: page
+        activePage: isActive ? page : prevState.activePage
       }
     })
   }
@@ -73,15 +73,18 @@ export default class MagicHat extends React.Component {
     const nextPage = page + 1
 
     const actions = {
-      setCurrentFrame: state => setContent(page, {state}),
+      setCurrentFrame: (state, isActive = false) =>
+        setContent(page, {state}, isActive),
       getCurrentFrame: () => getFrame(page),
       closeCurrentFrame: () => sliceFrame(page),
 
-      setNextFrame: (id, state) => setContent(nextPage, {id, state}),
+      setNextFrame: (id, state, isActive = true) =>
+        setContent(nextPage, {id, state}, isActive),
       getNextFrame: () => getFrame(nextPage),
       closeNextFrame: () => sliceFrame(nextPage),
 
-      setFrame: (page, id, state) => setContent(page, {id, state}),
+      setFrame: (page, id, state, isActive = false) =>
+        setContent(page, {id, state}, isActive),
       getFrame: page => getFrame(page),
       closeFrame: page => sliceFrame(page)
     }
